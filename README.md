@@ -1,9 +1,8 @@
 # 🧠 AI Agent Clipboard Assistant
 
-<<<<<<< HEAD
 This Python project is a smart clipboard assistant that monitors your clipboard for text or screenshots and responds using AI. Triggered by a custom keyword (`askai`), it uses OpenRouter's Mistral model to answer questions, or falls back to Google Search when needed.
 =======
-This Python project is a smart clipboard assistant that monitors your clipboard for text or screenshots and responds using AI. Triggered by a custom keyword (`sexy`), it uses OpenRouter's Mistral model to answer questions, or falls back to Google Search when needed.
+This Python project is a smart clipboard assistant that monitors your clipboard for text or screenshots and responds using AI. Triggered by a custom keyword (`askai`), it uses OpenRouter's Mistral model to answer questions, or falls back to Google Search when needed.
 >>>>>>> 152c0443ef69da6f7db58ed54eb16a7b3bbfc915
 
 ---
@@ -13,11 +12,8 @@ This Python project is a smart clipboard assistant that monitors your clipboard 
 - 📋 **Clipboard automation** using `pyperclip` and `PIL`.
 - 🧾 **Optical Character Recognition (OCR)** with Tesseract via `pytesseract`.
 - 🌐 **Making HTTP requests** to APIs using `requests`.
-<<<<<<< HEAD
 - 🔒 **API key security** with `.env` and `python-dotenv`.
-=======
 - 🔒 **API key security** (never hard-code real keys in public repos).
->>>>>>> 152c0443ef69da6f7db58ed54eb16a7b3bbfc915
 - 💬 **Text input capture** using `keyboard` to monitor typed trigger words.
 - 🪟 **GUI creation** with `tkinter` for interactive popups.
 - 🪟 **Startup automation** with `.bat` scripts on Windows.
@@ -53,7 +49,6 @@ pytesseract
 <<<<<<< HEAD
 python-dotenv
 =======
->>>>>>> 152c0443ef69da6f7db58ed54eb16a7b3bbfc915
 ```
 
 ---
@@ -62,11 +57,10 @@ python-dotenv
 
 1. **Install Python 3** (make sure it's added to your system PATH).
 
-<<<<<<< HEAD
 2. **Install [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)**:
 =======
 2. **Install \*\*\*\*\*\*\*\*\*\*\*\*****[Tesseract OCR](https://github.com/tesseract-ocr/tesseract)**:
->>>>>>> 152c0443ef69da6f7db58ed54eb16a7b3bbfc915
+
 
    - Download and install for Windows.
    - Note the path (usually `C:\Program Files\Tesseract-OCR\tesseract.exe`).
@@ -77,7 +71,6 @@ python-dotenv
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 ```
 
-<<<<<<< HEAD
 4. **Store your API Key securely with `.env` file**:
 
    - Create a file named `.env` in your project folder:
@@ -109,8 +102,6 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 ```python
 OPENROUTER_API_KEY = 'your-api-key-here'
 ```
->>>>>>> 152c0443ef69da6f7db58ed54eb16a7b3bbfc915
-
 ---
 
 ## 🧠 How to Use
@@ -122,11 +113,10 @@ python agent.py
 ```
 
 2. **Copy text or take a screenshot** (`PrtSc`).
-<<<<<<< HEAD
 3. **Type the word `askai`** anywhere on the keyboard.
 =======
-3. \*\*Type the word \*\***`sexy`** anywhere on the keyboard.
->>>>>>> 152c0443ef69da6f7db58ed54eb16a7b3bbfc915
+3. \*\*Type the word \*\***`askai`** anywhere on the keyboard.
+
 4. A popup window appears with the AI-generated answer.
 
 ---
@@ -138,15 +128,12 @@ MYGPT/
 ├── agent.py
 ├── README.md
 ├── requirements.txt
-<<<<<<< HEAD
 ├── .env            # Not tracked by Git if listed in .gitignore
 =======
->>>>>>> 152c0443ef69da6f7db58ed54eb16a7b3bbfc915
 ```
 
 ---
 
-<<<<<<< HEAD
 ## 🔐 Environment & Security
 
 - Store sensitive keys (like API keys) in a `.env` file.
@@ -156,7 +143,6 @@ MYGPT/
 ---
 
 =======
->>>>>>> 152c0443ef69da6f7db58ed54eb16a7b3bbfc915
 ## 🧰 Tips & Warnings
 
 - ❗ This only works on **Windows** (due to `ImageGrab` and startup script).
