@@ -3,3 +3,4 @@ pyperclip
 keyboard
 pillow
 pytesseract
+python-dotenv

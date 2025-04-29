@@ -12,8 +12,11 @@ import webbrowser  # Add at the top with other imports
 # Set path to where you installed Tesseract
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-# ==== Configuration ====
-OPENROUTER_API_KEY = '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'
+from dotenv import load_dotenv
+load_dotenv()
+
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+
 OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions'
 
 headers = {
@@ -98,7 +101,7 @@ def add_to_startup():
 
 # ==== Main Program ====
 
-print("AI Agent Running... Copy text or take screenshot (PrtSc), then type 'sexy' to trigger.")
+print("AI Agent Running... Copy text or take screenshot (PrtSc), then type 'askai' to trigger.")
 
 add_to_startup()
 
@@ -119,8 +122,8 @@ while True:
             if len(typed_chars) > 10:
                 typed_chars = typed_chars[-10:]
 
-            if 'sexy' in typed_chars.lower():
-                print("Trigger word 'sexy' detected!")
+            if 'askai' in typed_chars.lower():
+                print("Trigger word 'askai' detected!")
 
                 final_text = get_text_from_clipboard()
 
